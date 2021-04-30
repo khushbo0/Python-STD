@@ -1,0 +1,75 @@
+<title>Student List</title>
+<style>
+.container
+{
+	padding: 50px;
+	background-color: lightblue;
+}
+hr
+{
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+table
+{
+	background-color: lavender;
+}
+.homebtn 
+{  
+	font-family:cursive;
+  	background-color: #4CAF50;  
+  	padding: 16px 20px;  
+  	margin: 8px 0;  
+  	border:crimson;  
+  	cursor: pointer;  
+  	width: auto ;  
+ 	opacity: 0.9; 
+	border-radius:15px;
+	float:center;
+	 
+}
+
+.homebtn:hover
+{  
+  opacity: 1;  
+}  
+
+
+</style>
+<div class="container">
+	<center><h1>All Registered Student Details</h1></center>
+	<hr>
+	
+<center><table border="3" cellspacing="20"></center>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>FatherName</th>
+		<th>MotherName</th>
+		<th>Course</th>
+		<th>Contact</th>
+		<th>Address</th>
+		<th>Email</th>
+		<th>Password</th>
+		<th colspan="2">Action</th>
+		
+	</tr>
+	{% for i in stdlist%}
+	<tr>
+	<td>{{i[0]}}</td>
+	<td>{{i[1]}}</td>
+	<td>{{i[2]}}</td>
+	<td>{{i[3]}}</td>
+	<td>{{i[4]}}</td>
+	<td>{{i[5]}}</td>
+	<td>{{i[6]}}</td>
+	<td>{{i[7]}}</td>
+	<td>{{i[8]}}</td>
+	<td><a href="deleteStd?id={{i[0]}}">Delete</a></td>
+	<td><a href="editStd?id={{i[0]}}">Edit</a></td>
+	</tr>
+	{%endfor%}
+</div>
+</table>
+<button type="Home" class="homebtn"><a href="/home">Home</a></button> 

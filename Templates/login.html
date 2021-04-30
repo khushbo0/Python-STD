@@ -1,0 +1,83 @@
+<html>   
+<head>    
+<title> Login Page </title>  
+    <style>   
+        body
+        {    
+            font-family:cursive;
+            background-color: pink; 
+            margin-top: 10px;
+            margin-left: 400px;
+        }  
+        button
+        {
+            font-family:cursive;   
+            background-color: #4CAF50;     
+            color: orange;   
+            width: 40% 40%;   
+            padding: 15px;  
+            margin: 10px 0px;   
+            border: none;   
+            cursor: pointer; 
+            border-radius:50px;  
+        }   
+        form
+        {   
+            font-family:cursive;
+            border-radius:15px 50px 30px; 
+            width:40% 40%; 
+        }   
+        input[type=text], input[type=password] 
+        {   
+            width: 100%;   
+            margin: 8px 4px;  
+            padding: 20px 20px;   
+            display: inline-block;   
+            border: 2px solid green;   
+            box-sizing: border-box;
+            border-radius:50px;
+            font-family:'Loto',cursive;
+            
+        }  
+        button:hover
+        {   
+            opacity: 0.8;   
+        }       
+        
+        
+        .container 
+        {   
+            padding: 25px;   
+            background-color: lightblue; 
+    	    width:50%;
+	    height:50vh;
+
+        }        
+
+    </style>   
+</head>    
+<body> 
+      
+      
+    <form action="check_user" method="POST">
+ 	<b><h1>Login</h1></b> 
+        <div class="container">  
+<table>
+	<tr> 
+		<td class=tdlabel>
+		<label>  UserName : </label></td>
+		<td><input type="text" placeholder="UserName" name="username" required> </td> 
+	</tr>
+	<tr>
+		<td class=tdlabel>
+		<label>Password : </label></td>
+		<td><input type="password" placeholder="Password" name="password" required></td>  
+	</tr>
+</table>
+            <button type="submit">Login</button> <br>   
+            <pre><b><input type="checkbox" checked="Checked"> Remember me </b>     <b><a href="#">Forgot password?</b></a></pre>   
+         </div>
+    </form> 
+   
+</body>     
+</html>  

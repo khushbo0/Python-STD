@@ -1,0 +1,168 @@
+<html>  
+<head>  
+	<title> Registration Form</title>
+  <style>  
+body
+{  
+	border: 1px solid #fff;
+	border-radius:60px 100px 90px;
+	
+}
+  
+.container
+{  
+	padding: 20px 200px 200px 40px;  
+	background-color: lightblue;
+	font-family:cursive;   
+}  
+  
+input[type=text], input[type=password], textarea 
+{  
+	width: 100%;  
+	padding: 25px;  
+	margin: 30px 200px 30px 200px;  
+	display: inline-block;  
+	border: 1px solid #006400;  
+	background: #f1f1f1; 
+	border-radius:20px 20px 20px 20px; 
+	font-family:cursive;
+}  
+
+input[type=text]:focus, input[type=password]:focus
+{  
+	background-color: orange;  
+	outline:auto;  
+	font-family:cursive;
+	margin: 30px 20px 30px 20px;
+}
+  
+ div 
+{   
+	border-radius:100px 100px 100px 100px;
+	padding:5px 5px 5px 5px;
+}
+form
+{
+	background-color: crimson;
+	margin: 30px 20px 30px 20px;
+	padding: 50px 20px 50px 20px;
+	border-radius:50px 50px 50px 50px;
+	
+}
+hr 
+{  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}
+  
+.registerbtn 
+{  
+  	background-color: #4CAF50;  
+  	color: orange;  
+  	padding:16px 20px;  
+  	margin: 8px ;    
+  	border: none;  
+  	cursor: pointer;  
+  	width: auto;  
+ 	opacity: 0.9;  
+	border-radius:15px;
+	text-align:center;
+	font-family:cursive;
+} 
+ 
+.registerbtn:hover
+{  
+  opacity: 1;  
+}  
+
+.homebtn 
+{  
+	font-family:cursive;
+  	background-color: #4CAF50;  
+  	padding: 16px 20px;  
+  	margin: 8px 0;  
+  	border:crimson;  
+  	cursor: pointer;  
+  	width: auto ;  
+ 	opacity: 0.9; 
+	border-radius:15px;
+	float:center;
+	 
+}
+
+.homebtn:hover
+{  
+  opacity: 1;  
+}   
+  
+</style>  
+</head>  
+<body>  
+<form action="addStd", method="POST">  
+  		<div class="container">  
+  			<center><h1>Student Registeration Form</h1></center>  
+  			<hr>
+	<table>
+		<tr>   
+			<td class="tdLabel">
+				<label><b>ID: </b></label> </td>  
+				<center><td><input type="text" name="id" placeholder= "Student ID" size="5" required/></td></center>
+		</tr>
+		<tr>   
+			<td class="tdLabel">
+				<label><b>Name: </b></label> </td>  
+				<center><td><input type="text" name="name" placeholder= "Name" size="15" required/></td></center>
+		</tr>
+		<tr>
+			<td class="tdLabel">
+				<label> <b>FatherName: </b></label></td>   
+				<center><td><input type="text" name="fathername" placeholder="FatherName" size="15" required /></td></center>
+		</tr>
+		<tr>
+			<td class="tdLabel">
+				<label> <b>MotherName: </b></label> </td>
+				<center><td><input type="text" name="mothername" placeholder="MotherName" size="15" required /> </td></center>
+		</tr>
+			 <tr>
+			<td class="tdlabel">
+				<label for="course"><b>Course:</b></label></td>
+				<center><td><select id="course" name="course">
+					<option value="bca">BCA</option>
+					<option value="bba">BBA</option>
+					<option value="b.tech">B.Tech</option>
+					<option value="mca">MCA</option>
+					<option value="mba">MBA</option>
+					<option value="m.tech">M.Tech</option>
+			</select></td></center>
+		</tr>
+		<tr>
+			<td class="tdLabel">
+			  <label><b>Contact:</b></label></td>  
+			  <center><td><input type="text" name="contact" placeholder="Contact" size="15"/> </td></center>
+		   </tr>
+		     <tr>
+			<td class="tdLabel">
+				<label><b>Address: </b></label></td>
+				<center><td><input type="text" placeholder="Address" name="address"  required></td></center>
+		   
+				</tr>
+ 
+		     <tr>
+			<td class="tdLabel">
+				<label for="email"><b>Email:</b></label></td>
+				<center><td><input type="text" name="email" placeholder="Enter Email"  required></td></center>
+		     </tr>
+  	
+		     <tr>
+			<td class="tdLabel">
+				<label for="psw"><b>Password:</b></label></td>  
+				<center><td><input type="password" placeholder="Enter Password" name="password" required></td> </center>
+		     </tr>  
+    </table>
+	<button type="submit" class="registerbtn">Register</button>
+    </div>   
+	<button type="Home" class="homebtn"><a href="home">Home</a></button>
+  </form>  
+	
+  </body>  
+</html>  
